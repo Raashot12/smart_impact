@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Gotham";
+  src: url("//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.eot");
+  src: url("//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.svg#Gotham")
+      format("svg");
+}
+.label {
+  text-transform: initial;
+  font-size: 1rem;
+  font-family: "Gotham Rounded" !important;
+  font-style: normal;
+  text-transform: initial;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0px;
+}
+
+.label:hover {
+  color: #4f88c7;
+}
+.label:visited {
+  color: #4f88c7;
+}
+.fontpaddingfornavbar {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-family: "Gotham Rounded";
+  font-weight: normal;
+  line-height: 19px;
+  color: #6e6e6e;
+  font-style: normal;
+  padding-right: 40px;
+  cursor: pointer;
+}
+
+/*Large Screen Size*/
+@media screen and (max-width: 1200px) {
+  .fontpaddingfornavbar {
+    padding-right: 25px;
+    font-size: 15px;
+  }
+}
+.centralizedwelcome {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  font-family: "Gotham Rounded";
+  align-items: center;
+  height: 5vh;
+}
+/* Small Screen Size*/
+@media screen and (max-width: 576px) {
+  .centralizedwelcome {
+    display: block;
+  }
+}

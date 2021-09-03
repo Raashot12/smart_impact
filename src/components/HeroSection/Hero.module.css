@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Gotham";
+  src: url("//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.eot");
+  src: url("//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/3a47f5f06b5484abfeee9eac90348a9c.svg#Gotham")
+      format("svg");
+}
+.backHero {
+  width: 100%;
+  height: 478px;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  justify-content: center;
+  background-image: url(/src/assests/images/imagefour.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.backHero2 {
+  width: 100%;
+  height: 478px;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  justify-content: center;
+  background-image: url(/src/assests/images/imagethree.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.backHero3 {
+  width: 100%;
+  height: 478px;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  justify-content: center;
+  background-image: url(/src/assests/images/imagetwo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.backHero4 {
+  width: 100%;
+  height: 478px;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  justify-content: center;
+  background-image: url(/src/assests/images/imageone.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.btnstyled {
+  width: 120px;
+  color: white;
+  height: 2.6875rem;
+  background-color: #334f7d;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.educConsult {
+  color: #ffff;
+  font-family: "Gotham";
+}
+
+@media screen and (max-width: 576px) {
+  .educConsult {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .btnstyled {
+    height: 3.125rem;
+  }
+}
