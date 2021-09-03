@@ -15,7 +15,7 @@
 .label {
   text-transform: initial;
   font-size: 1rem;
-  font-family: "Gotham Rounded" !important;
+  font-family: Barlow;
   font-style: normal;
   text-transform: initial;
   font-weight: 400;
@@ -32,7 +32,7 @@
 .fontpaddingfornavbar {
   text-transform: capitalize;
   font-size: 16px;
-  font-family: "Gotham Rounded";
+  font-family: Barlow;
   font-weight: normal;
   line-height: 19px;
   color: #6e6e6e;
@@ -52,7 +52,7 @@
   justify-content: space-between;
   align-items: center;
   display: flex;
-  font-family: "Gotham Rounded";
+  font-family: Barlow;
   align-items: center;
   height: 5vh;
 }
