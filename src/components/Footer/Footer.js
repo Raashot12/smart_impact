@@ -7,7 +7,7 @@ import InstagramIcon from "../Icons/InstagramIcon"
 import Linkedin from "../Icons/LinkedInIcon"
 // import YoutubeIcon from "../Icons/YoutubeIcon"
 import SamartImpact from "../Icons/SamartImpact"
-import logo from "../../assests/images/Logo.png"
+
 // styles
 import "./Footer.css"
 import { Container } from "@material-ui/core"
@@ -62,7 +62,6 @@ export const getSocialLinks = fillColor => {
 
 const Footer = ({ bgVariant = "dark" }) => {
   const fillColor = bgVariant === "light" ? "#1C1D1A" : "#C4C4C4"
-  const logoFillColor = bgVariant === "light" ? "#3DDC84" : "#FFFFFF"
   return (
     <>
       <section className={`footer-container footer-container-${bgVariant}`}>
