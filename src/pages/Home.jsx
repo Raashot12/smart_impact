@@ -4,6 +4,7 @@ import OurService from "../components/GlobalMiddleText/OurService"
 import PopularNews from "../components/PopularNews/PopularNews"
 import EudcationNews from "../components/EudcationNews/EudcationNews"
 import BuildAndDevelopement from "../components/BuildAndDevelopment/BuildAndDevelopement"
+import Team from "../components/Team/Team"
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <PopularNews />
       <EudcationNews />
       <BuildAndDevelopement />
+      <Team />
     </div>
   )
 }

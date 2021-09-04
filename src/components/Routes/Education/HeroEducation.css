@@ -1,0 +1,13 @@
+.education-hero-img {
+  background-image: url(../../../assests/images/educatonhero.svg);
+  height: 478px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: Barlow;
+}
+.education-hero-img h1 {
+  color: #1c1d1a;
+}

@@ -50,7 +50,7 @@ const BuildAndDevelopement = () => {
     <div>
       <Container>
         <CenterContent>
-          <h3 className="ourservice">Real Estate & Property</h3>
+          <h3 className="ourservice">REAL ESTATE & PROPERTY</h3>
           <div className="underline"></div>
         </CenterContent>
         <div className="general-new-flex-container">
