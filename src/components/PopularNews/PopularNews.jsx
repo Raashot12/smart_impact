@@ -3,6 +3,7 @@ import CenterContent from "../../Utilities/CenterContent"
 import Container from "@material-ui/core/Container"
 import aboutus from "../../assests/images/aboutus.svg"
 import "./PopularNews.css"
+import { Link } from "react-router-dom"
 const blog = [
   {
     img: aboutus,
@@ -52,7 +53,7 @@ const PopularNews = () => {
                 <article>
                   <img
                     src={news.img}
-                    height="200px"
+                    height="150px"
                     width="100%"
                     alt="card news"
                   />
@@ -64,6 +65,12 @@ const PopularNews = () => {
               </div>
             )
           })}
+        </div>
+        <div className="view-more-btn">
+          <Link to="/blog">
+            {" "}
+            <button>Explore more views...</button>
+          </Link>
         </div>
       </Container>
     </div>

@@ -61,7 +61,7 @@ const EudcationNews = () => {
                 <article>
                   <img
                     src={news.img}
-                    height="200px"
+                    height="150px"
                     width="100%"
                     alt="card news blog"
                   />
