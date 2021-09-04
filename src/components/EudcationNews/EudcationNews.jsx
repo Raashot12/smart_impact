@@ -2,7 +2,6 @@ import React from "react"
 import CenterContent from "../../Utilities/CenterContent"
 import Container from "@material-ui/core/Container"
 import aboutus from "../../assests/images/aboutus.svg"
-import "./PopularNews.css"
 const blog = [
   {
     img: aboutus,
@@ -36,13 +35,21 @@ const blog = [
     date: "4th September, 2021",
     id: 3,
   },
+  {
+    img: aboutus,
+    title: "Lagos is in mess as Lekki is fluided with water",
+    content:
+      "Maecenas lacinia lacus in viverra gravida. Vestibulum ut mi in nisi laoreet viverra eu ultricies ante. Cras mollis ex neque.",
+    date: "4th September, 2021",
+    id: 4,
+  },
 ]
-const PopularNews = () => {
+const EudcationNews = () => {
   return (
     <div>
       <Container>
         <CenterContent>
-          <h3 className="ourservice">GENERAL NEWS</h3>
+          <h3 className="ourservice">EDUCATION NEWS</h3>
           <div className="underline"></div>
         </CenterContent>
         <div className="general-new-flex-container">
@@ -54,7 +61,7 @@ const PopularNews = () => {
                     src={news.img}
                     height="200px"
                     width="100%"
-                    alt="card news"
+                    alt="card news blog"
                   />
                   <h4>{news.title}</h4>
                   <p>{news.content}</p>
@@ -70,4 +77,4 @@ const PopularNews = () => {
   )
 }
 
-export default PopularNews
+export default EudcationNews

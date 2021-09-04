@@ -50,6 +50,10 @@ const OurService = () => {
             </div>
             <div className="ourserviceslist space-bottom-card">
               <span>✔️</span>
+              <p> WAEC</p>
+            </div>
+            <div className="ourserviceslist space-bottom-card">
+              <span>✔️</span>
               <p>NECO</p>
             </div>
             <div className="ourserviceslist space-bottom-card">
@@ -103,6 +107,10 @@ const OurService = () => {
             <div className="ourserviceslist space-bottom-card">
               <span>✔️</span>
               <p>MERCHANDISING</p>
+            </div>
+            <div className="ourserviceslist space-bottom-card">
+              <span>✔️</span>
+              <p>REAL ESTATE AGENCY</p>
             </div>
             <div className="btn-holder-two">
               <button className="explore-btn">

@@ -14,10 +14,6 @@ import { Container } from "@material-ui/core"
 
 const footerLinks = [
   {
-    title: "Blog",
-    href: "/blog",
-  },
-  {
     title: "Build & Dev",
     href: "/build-dev",
   },
@@ -26,12 +22,12 @@ const footerLinks = [
     href: "/education",
   },
   {
-    title: "Contact Us",
-    href: "/contact-us",
+    title: "About Us",
+    href: "/about-us",
   },
   {
-    title: "FAQs",
-    href: "/faqs",
+    title: "Contact Us",
+    href: "/contact-us",
   },
 ]
 
@@ -127,7 +123,7 @@ const Footer = ({ bgVariant = "dark" }) => {
                 Terms of Service
               </Link>{" "}
               and{" "}
-              <Link to="/data-privacy" className="term-policy">
+              <Link to="/faqs" className="term-policy">
                 FAQs
               </Link>
               .

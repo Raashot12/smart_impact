@@ -6,9 +6,15 @@ import chooseus from "../../assests/images/chooseus.svg"
 import mission from "../../assests/images/mission.svg"
 import believe from "../../assests/images/believe.svg"
 import strenght from "../../assests/images/strenght.svg"
+// import aboutHero from "../../assests/images/abouthero.svg"
 const CompanyDetails = () => {
   return (
     <div>
+      <div className="about-hero-img">
+        <Container>
+          <h1>ABOUT US</h1>
+        </Container>
+      </div>
       <Container>
         <div className="companydetails">
           <section className="details-one">

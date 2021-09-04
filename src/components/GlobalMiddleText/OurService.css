@@ -40,7 +40,7 @@
   box-shadow: 0px 4px 73px -28px rgba(0, 0, 0, 0.19);
   border-radius: 34px 40px 42px 35px;
   width: 100%;
-  height: 55.25rem;
+  height: 60.25rem;
   padding-top: 2.25rem;
   padding-left: 2.75rem;
   padding-right: 2.75rem;
@@ -87,7 +87,7 @@
   text-align: center;
   width: 15.75rem;
   height: 3rem;
-  background: #334F7D;
+  background: #334f7d;
   border-radius: 8px;
   outline: none;
   border: none;
@@ -112,7 +112,7 @@
 }
 .btn-holder-two {
   text-align: center;
-  padding-top:  2.5625rem;
+  padding-top: 2.5625rem;
 }
 
 /* MEDIA QURIES FOR RESPONSIVE*/
@@ -137,7 +137,7 @@
   .explore-btn svg {
     height: 1rem;
   }
-  .ourserviceflexitem{
-      height: 62.25rem;
+  .ourserviceflexitem {
+    height: 64rem;
   }
 }

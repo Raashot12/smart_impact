@@ -3,26 +3,34 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.about-hero-img {
+  background-image: url(../../assests/images/abouthero.svg);
+  height: 478px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 .companydetails-two {
   display: flex;
   justify-content: space-around;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   flex-wrap: wrap;
 }
 .details-one {
   width: 100%;
   box-shadow: 0px 4px 73px -28px rgba(0, 0, 0, 0.19);
   padding: 2rem;
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 .details-two {
-   width: 100%;
+  width: 100%;
   box-shadow: 0px 4px 73px -28px rgba(0, 0, 0, 0.19);
   padding: 2rem;
   margin-bottom: 2rem;
 }
 .details-three {
- width: 100%;
+  width: 100%;
   box-shadow: 0px 4px 73px -28px rgba(0, 0, 0, 0.19);
   padding: 2rem;
 }

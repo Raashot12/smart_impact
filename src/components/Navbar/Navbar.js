@@ -38,6 +38,10 @@ const menuItems = [
     pageURL: "/education",
   },
   {
+    menuTitle: "About Us",
+    pageURL: "/about-us",
+  },
+  {
     menuTitle: "Contact Us",
     pageURL: "/contact-us",
   },

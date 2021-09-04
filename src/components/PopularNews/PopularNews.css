@@ -1,0 +1,48 @@
+.general-new-flex-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-family: Barlow;
+  margin-top: 3.5rem;
+}
+.general-new-flex-container h4 {
+  font-weight: bolder;
+  margin-top: 2rem;
+}
+.general-new-flex-container h4 {
+  font-weight: bolder;
+}
+.general-news-cards {
+  width: 100%;
+  box-shadow: 0px 4px 73px -28px rgba(0, 0, 0, 0.19);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  
+  cursor: pointer;
+}
+.general-new-flex-container .general-news-cards:last-of-type{
+    margin-bottom: 0;
+}
+
+.general-new-flex-container button{
+    outline: none;
+    background-color: #334F7D;
+    color: white;
+    border-radius: 3px;
+    width: 150px;
+    height: 2rem;
+    border: none;
+    margin-top: 1.2rem;
+}
+.general-new-flex-container button:hover{
+    transition: all 0.5s ease-out;
+    background: transparent;
+    border: 1px solid red;
+    color: red;
+}
+@media (min-width: 900px) {
+  .general-news-cards {
+    width: 31.3%;
+    margin-right: 2.03%;
+  }
+}
