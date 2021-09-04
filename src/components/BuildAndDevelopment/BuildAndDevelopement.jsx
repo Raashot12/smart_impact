@@ -2,7 +2,6 @@ import React from "react"
 import CenterContent from "../../Utilities/CenterContent"
 import Container from "@material-ui/core/Container"
 import aboutus from "../../assests/images/aboutus.svg"
-import "./EudcationNews.css"
 import { Link } from "react-router-dom"
 const blog = [
   {
@@ -46,12 +45,12 @@ const blog = [
     id: 4,
   },
 ]
-const EudcationNews = () => {
+const BuildAndDevelopement = () => {
   return (
     <div>
       <Container>
         <CenterContent>
-          <h3 className="ourservice">EDUCATION NEWS</h3>
+          <h3 className="ourservice">Real Estate & Property</h3>
           <div className="underline"></div>
         </CenterContent>
         <div className="general-new-flex-container">
@@ -75,7 +74,7 @@ const EudcationNews = () => {
           })}
         </div>
         <div className="view-more-btn">
-          <Link to="/education">
+          <Link to="/build-dev">
             {" "}
             <button>View More...</button>
           </Link>
@@ -85,4 +84,4 @@ const EudcationNews = () => {
   )
 }
 
-export default EudcationNews
+export default BuildAndDevelopement

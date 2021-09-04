@@ -3,6 +3,7 @@ import Hero from "../components/HeroSection/Hero"
 import OurService from "../components/GlobalMiddleText/OurService"
 import PopularNews from "../components/PopularNews/PopularNews"
 import EudcationNews from "../components/EudcationNews/EudcationNews"
+import BuildAndDevelopement from "../components/BuildAndDevelopment/BuildAndDevelopement"
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <OurService></OurService>
       <PopularNews />
       <EudcationNews />
+      <BuildAndDevelopement />
     </div>
   )
 }
