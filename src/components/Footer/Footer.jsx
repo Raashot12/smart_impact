@@ -42,7 +42,7 @@ export const getSocialLinks = fillColor => {
     {
       icon: <YouTubeIcon fillColor={fillColor} />,
       alt: "samartimpact-linkedin channel",
-      href: "",
+      href: undefined,
       id: 3,
     },
 
@@ -55,7 +55,7 @@ export const getSocialLinks = fillColor => {
     {
       icon: <TwitterIcon fillColor={fillColor} />,
       alt: "samartimpact-twitter channel",
-      href: "",
+      href: undefined,
       id: 1,
     },
   ];
@@ -85,9 +85,13 @@ const Footer = ({ bgVariant = "dark" }) => {
                   </div>
                   <ul className="d-flex footer-social-icons pt-absolute">
                     {getSocialLinks(fillColor).map(socialLink => {
-                      if (socialLink.href === "") {
+                      if (socialLink.href === undefined) {
                         return (
-                          <a style={{ cursor: "pointer" }} key={socialLink.id}>
+                          <a
+                            style={{ cursor: "pointer" }}
+                            key={socialLink.id}
+                            href={socialLink.href}
+                          >
                             {socialLink.icon}
                           </a>
                         );
