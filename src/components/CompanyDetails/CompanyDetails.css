@@ -1,7 +1,6 @@
-
 .about-hero-img {
   background-image: url(../../assests/images/abouthero.svg);
-  height: 478px;
+  height: 250px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -11,6 +10,9 @@
   background-color: #fff;
   color: #1c1d1a;
   font-family: Barlow;
+}
+.about-hero-img h1{
+  color: #020202;
 }
 .accordion-space-up {
   padding-top: 2rem;
@@ -73,32 +75,8 @@
     line-height: 101.2%;
     font-weight: 600;
   }
-  .faq-bg-container {
-    height: 20.0625rem;
-    align-items: center;
-  }
-  .faq-bg-container .faq-hero-text {
-    font-size: 4rem;
-  }
 
-  .faq-bg-container form {
-    margin-top: 4rem;
-    padding-left: 4.5rem;
-  }
-  .svg-icon-position {
-    top: 1.2rem;
-    left: 5.625rem;
-    width: 1.49875rem;
-    height: 1.5rem;
-  }
-  .faq-bg-container form input {
-    height: 3.5rem;
-    width: 91.9%;
-    font-size: 1.125rem;
-    padding-left: 3.5rem;
-  }
-  ::placeholder {
-    font-size: 1.125rem;
+  .about-hero-img {
+    height: 478px;
   }
 }
-

@@ -1,6 +1,6 @@
 .education-hero-img {
   background-image: url(../../../assests/images/educatonhero.svg);
-  height: 478px;
+  height: 270px;
   background-repeat: no-repeat;
   background-position: top center;
   display: flex;
@@ -9,5 +9,171 @@
   font-family: Barlow;
 }
 .education-hero-img h1 {
-  color: #1c1d1a;
+  color: #020202;
 }
+
+.education-hero-img form {
+  margin-top: 2.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.education-hero-img form input {
+  border-radius: 0.75rem;
+  height: 1.875rem;
+  width: 100%;
+  background: #334F7D;
+  border: none;
+  font-size: 0.75rem;
+  outline: none;
+  color: #fff;
+  padding-left: 2.25rem;
+}
+::placeholder {
+  font-weight: lighter !important;
+  color: #fff;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+}
+.svg-icon-position {
+  position: absolute;
+  top: 0.7rem;
+  left: 12px;
+  width: 0.749375rem;
+  height: 0.75rem;
+}
+
+.alert-search-message {
+  text-align: center;
+}
+.space-bottom-on-search {
+  background-color: #fff;
+  padding-bottom: 4rem;
+}
+.space-bottom-no-search {
+  background-color: #fff;
+  padding-bottom: 1rem;
+}
+.alert-warning {
+  font-size: smaller !important;
+}
+
+.education-item-container{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-family: Barlow;
+  margin-top: 3.5rem;
+}
+.education-item-container h4 {
+  font-weight: bolder;
+  margin-top: 2rem;
+}
+.education-news-cards {
+  width: 100%;
+  box-shadow: 0px 4px 73px -28px rgba(0, 0, 0, 0.19);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.education-item-container .education-news-cards:last-of-type{
+    margin-bottom: 0;
+}
+.education-item-container button{
+    outline: none;
+    background-color: #334F7D;
+    color: white;
+    border-radius: 3px;
+    width: 150px;
+    height: 2rem;
+    border: none;
+    margin-top: 1.2rem;
+}
+.education-item-container button:hover{
+    transition: all 0.5s ease-out;
+    background: transparent;
+    border: 1px solid red;
+    color: red;
+}
+
+
+
+@media (min-width: 900px) {
+
+  .education-hero-img {
+    height: 29.875rem;
+    align-items: center;
+  }
+
+  .education-hero-img form {
+    margin-top: 4rem;
+    padding-left: 4.5rem;
+  }
+  .svg-icon-position {
+    top: 1.2rem;
+    left: 5.625rem;
+    width: 1.49875rem;
+    height: 1.5rem;
+  }
+  .education-hero-img form input {
+    height: 3.5rem;
+    width: 91.9%;
+    font-size: 1.125rem;
+    padding-left: 3.5rem;
+  }
+  ::placeholder {
+    font-size: 1.125rem;
+  }
+   .education-news-cards {
+    width: 31.3%;
+    margin-right: 2.03%;
+  }
+}
+
+
+
+/*GENERAL CARDS STYLING FOR EDUCATIONS CARDS */
+.general-new-flex-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-family: Barlow;
+  margin-top: 3.5rem;
+}
+.general-new-flex-container h4 {
+  font-weight: bolder;
+  margin-top: 2rem;
+}
+.general-new-flex-container h4 {
+  font-weight: bolder;
+}
+.general-news-cards {
+  width: 100%;
+  box-shadow: 0px 4px 73px -28px rgba(0, 0, 0, 0.19);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  
+  cursor: pointer;
+}
+
+
+.general-new-flex-container button{
+    outline: none;
+    background-color: #334F7D;
+    color: white;
+    border-radius: 3px;
+    width: 150px;
+    height: 2rem;
+    border: none;
+    margin-top: 1.2rem;
+}
+.general-new-flex-container button:hover{
+    transition: all 0.5s ease-out;
+    background: transparent;
+    border: 1px solid red;
+    color: red;
+}
+

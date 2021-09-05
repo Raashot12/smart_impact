@@ -13,7 +13,7 @@ const Accordion = ({ title, content, id, img }) => {
   }
   return (
     <div>
-      <div className=" accordion-bg" key={id}>
+      <div className=" accordion-bg">
         <div className="accordion-space-up">
           <div
             className="accordion-title-container"
@@ -31,7 +31,7 @@ const Accordion = ({ title, content, id, img }) => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Accordion

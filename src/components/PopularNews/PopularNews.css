@@ -42,7 +42,7 @@
 }
 @media (min-width: 900px) {
   .general-news-cards {
-    width: 31.3%;
+    width: 31.3% !important;
     margin-right: 2.03%;
   }
 }

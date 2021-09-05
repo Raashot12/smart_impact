@@ -4,7 +4,7 @@ import Container from "@material-ui/core/Container"
 import aboutus from "../../assests/images/aboutus.svg"
 import "./EudcationNews.css"
 import { Link } from "react-router-dom"
-const blog = [
+export const blog = [
   {
     img: aboutus,
     title: "NYSC Camp Orientation Begin Today",
@@ -45,7 +45,7 @@ const blog = [
     date: "4th September, 2021",
     id: 4,
   },
-]
+];
 const EudcationNews = () => {
   return (
     <div>
