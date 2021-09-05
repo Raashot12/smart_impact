@@ -6,7 +6,7 @@ const reviews = [
     name: "Alabi Segun",
     role: "Director of Build and Development",
     image: Segunimg,
-    text: "he is a graduate and a certified member of Nigeria institute of town planners.(NITP)",
+    text: "He is a graduate and a certified member of Nigeria institute of town planners.(NITP)",
   },
   {
     id: 2,

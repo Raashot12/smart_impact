@@ -1,16 +1,16 @@
-import React from "react"
-import { Link } from "react-router-dom"
+import React from "react";
+import { Link } from "react-router-dom";
 // icons
-import TwitterIcon from "../Icons/TwitterIcon"
-import FacebookIcon from "../Icons/FacebookIcon"
-import InstagramIcon from "../Icons/InstagramIcon"
-import Linkedin from "../Icons/LinkedInIcon"
+import TwitterIcon from "../Icons/TwitterIcon";
+import FacebookIcon from "../Icons/FacebookIcon";
+import InstagramIcon from "../Icons/InstagramIcon";
+import YouTubeIcon from "../Icons/YouTubeIcon";
 // import YoutubeIcon from "../Icons/YoutubeIcon"
-import SamartImpact from "../Icons/SamartImpact"
+import SamartImpact from "../Icons/SamartImpact";
 
 // styles
-import "./Footer.css"
-import { Container } from "@material-ui/core"
+import "./Footer.css";
+import { Container } from "@material-ui/core";
 
 const footerLinks = [
   {
@@ -29,35 +29,40 @@ const footerLinks = [
     title: "Contact Us",
     href: "/contact-us",
   },
-]
+];
 
 export const getSocialLinks = fillColor => {
   return [
     {
-      icon: <TwitterIcon fillColor={fillColor} />,
-      alt: "samar-twitter channel",
-      href: "https://twitter.com/trysamar",
+      icon: <InstagramIcon fillColor={fillColor} />,
+      alt: "samartimpact-instagram channel",
+      href: "https://www.instagram.com/smartimpact_ng?r=nametag",
+      id: 4,
     },
+    {
+      icon: <YouTubeIcon fillColor={fillColor} />,
+      alt: "samartimpact-linkedin channel",
+      href: "",
+      id: 3,
+    },
+
     {
       icon: <FacebookIcon fillColor={fillColor} />,
-      alt: "samar-facebook channel",
-      href: "https://fb.com/trysamar",
+      alt: "samartimpact-facebook channel",
+      href: "https://www.facebook.com/Smartimpact.ng/",
+      id: 2,
     },
     {
-      icon: <InstagramIcon fillColor={fillColor} />,
-      alt: "samar-instagram channel",
-      href: "https://instagram.com/trysamar",
+      icon: <TwitterIcon fillColor={fillColor} />,
+      alt: "samartimpact-twitter channel",
+      href: "",
+      id: 1,
     },
-    {
-      icon: <Linkedin fillColor={fillColor} />,
-      alt: "samar-linkedin channel",
-      href: "https://www.linkedin.com/trysamar",
-    },
-  ]
-}
+  ];
+};
 
 const Footer = ({ bgVariant = "dark" }) => {
-  const fillColor = bgVariant === "light" ? "#1C1D1A" : "#C4C4C4"
+  const fillColor = bgVariant === "light" ? "#1C1D1A" : "#C4C4C4";
   return (
     <>
       <section className={`footer-container footer-container-${bgVariant}`}>
@@ -73,15 +78,33 @@ const Footer = ({ bgVariant = "dark" }) => {
                 <div className="d-flex flex-column flex-lg-row justify-content-lg-between position-relative">
                   <div className="d-flex justify-content-between footer-links">
                     {footerLinks.map(link => (
-                      <Link to={link.href}>{link.title}</Link>
+                      <Link to={link.href} key={link.href}>
+                        {link.title}
+                      </Link>
                     ))}
                   </div>
                   <ul className="d-flex footer-social-icons pt-absolute">
-                    {getSocialLinks(fillColor).map(socialLink => (
-                      <Link target="_blank" to={socialLink.href}>
-                        {socialLink.icon}
-                      </Link>
-                    ))}
+                    {getSocialLinks(fillColor).map(socialLink => {
+                      if (socialLink.href === "") {
+                        return (
+                          <a style={{ cursor: "pointer" }} key={socialLink.id}>
+                            {socialLink.icon}
+                          </a>
+                        );
+                      } else {
+                        return (
+                          <a
+                            style={{ cursor: "pointer" }}
+                            target="_blank"
+                            href={socialLink.href}
+                            rel="noreferrer"
+                            key={socialLink.id}
+                          >
+                            {socialLink.icon}
+                          </a>
+                        );
+                      }
+                    })}
                   </ul>
                 </div>
               </div>
@@ -147,7 +170,7 @@ const Footer = ({ bgVariant = "dark" }) => {
         </section>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

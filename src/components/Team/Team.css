@@ -107,7 +107,7 @@
 }
 .prev-btn,
 .next-btn {
-  color: var(--clr-primary-7);
+  color: #334F7D;
   font-size: 1.25rem;
   background: transparent;
   border-color: transparent;
@@ -121,8 +121,8 @@
 }
 .random-btn {
   margin-top: 0.5rem;
-  background: var(--clr-primary-10);
-  color: var(--clr-primary-5);
+  background: #334F7D;
+  color: var(--clr-white);
   padding: 0.25rem 0.5rem;
   text-transform: capitalize;
   border-radius: var(--radius);
@@ -132,7 +132,7 @@
 }
 .random-btn:hover {
   background: var(--clr-primary-5);
-  color: var(--clr-primary-1);
+  color: var(--clr-red-dark);
 }
 
 @media (min-width: 900px){
