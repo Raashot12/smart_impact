@@ -5,6 +5,7 @@ import CenterContent from "../../Utilities/CenterContent"
 import educationSvg from "../../assests/images/education.svg"
 import housing from "../../assests/images/housing.svg"
 import Arrow from "./Arrow"
+import { Link } from "react-router-dom";
 
 const OurService = () => {
   return (
@@ -61,9 +62,11 @@ const OurService = () => {
               <p>ICT TRAINING</p>
             </div>
             <div className="btn-holder">
-              <button className="explore-btn">
-                Explore <Arrow />
-              </button>
+              <Link to="/education">
+                <button className="explore-btn">
+                  Explore <Arrow />
+                </button>
+              </Link>
             </div>
           </article>
           <article className="ourserviceflexitem">
@@ -113,15 +116,17 @@ const OurService = () => {
               <p>REAL ESTATE AGENCY</p>
             </div>
             <div className="btn-holder-two">
-              <button className="explore-btn">
-                Explore <Arrow />
-              </button>
+              <Link to="/build-dev">
+                <button className="explore-btn">
+                  Explore <Arrow />
+                </button>
+              </Link>
             </div>
           </article>
         </div>
       </Container>
     </div>
-  )
-}
+  );
+};
 
 export default OurService

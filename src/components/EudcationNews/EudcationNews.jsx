@@ -35,7 +35,7 @@ export const blog = [
     content:
       "Maecenas lacinia lacus in viverra gravida. Vestibulum ut mi in nisi laoreet viverra eu ultricies ante. Cras mollis ex neque.",
     date: "4th September, 2021",
-    id: 3,
+    id: 4,
   },
   {
     img: aboutus,
@@ -43,7 +43,7 @@ export const blog = [
     content:
       "Maecenas lacinia lacus in viverra gravida. Vestibulum ut mi in nisi laoreet viverra eu ultricies ante. Cras mollis ex neque.",
     date: "4th September, 2021",
-    id: 4,
+    id: 5,
   },
 ];
 const EudcationNews = () => {

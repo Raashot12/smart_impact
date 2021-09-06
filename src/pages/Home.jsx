@@ -6,6 +6,7 @@ import EudcationNews from "../components/EudcationNews/EudcationNews"
 import BuildAndDevelopement from "../components/BuildAndDevelopment/BuildAndDevelopement"
 import Team from "../components/Team/Team"
 import ScrollToTop from "../components/ScrollToTop";
+import NewsLetter from "../components/NewsLetter/NewsLetter";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
         <EudcationNews />
         <BuildAndDevelopement />
         <Team />
+        <NewsLetter />
       </ScrollToTop>
     </div>
   );
