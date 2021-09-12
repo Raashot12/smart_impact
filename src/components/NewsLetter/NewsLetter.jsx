@@ -8,14 +8,14 @@ const NewsLetter = () => {
       <Container>
         <div className="newsletter-container">
           <div className="inner-newsletter-flex">
-            <div style={{ display: "flex" }} className="flex-item-newsletter">
+            <div className="flex-item-newsletter">
               <Envelop></Envelop>
               <div className="newsletter-text-holder">
                 <h3>GET OUR NEWSLETTER</h3>
                 <p>Click the provided button link to get started</p>
               </div>
             </div>
-            <div>
+            <div className="flex-item-newslettertwo">
               <button
                 onClick={() =>
                   window.open(
@@ -34,3 +34,5 @@ const NewsLetter = () => {
 };
 
 export default NewsLetter;
+
+

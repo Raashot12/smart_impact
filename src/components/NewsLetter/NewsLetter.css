@@ -1,24 +1,75 @@
-.newsletter-container{
-    display: flex;
-    width: 90%;
-    margin: 0 auto;
-    background-color: #334F7D;
-    color: #fff;
-    font-family: Barlow;
-    padding:2rem;
+.newsletter-container {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #334f7d;
+  color: #fff;
+  font-family: Barlow;
+  padding: 2rem;
 }
-.newsletter-text-holder{
-    margin-left: 1.5rem;
+.newsletter-text-holder {
+  margin-left: 1.5rem;
 }
-.inner-newsletter-flex{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+.inner-newsletter-flex {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
-.flex-item-newsletter{
- width: 50%;
+.flex-item-newsletter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-family: Barlow;
+}
+.flex-item-newsletter h3 {
+  font-size: 1rem;
+}
+.flex-item-newsletter p{
+    font-size: 0.5625rem
+}
+.flex-item-newslettertwo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-item-newslettertwo button {
+  width: 100%;
+  height: 2rem;
+  border-radius: 0.6rem;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  color: #32507d;
+  transition: 2ms;
+  margin-top: 2rem;
+}
+.flex-item-newslettertwo button:hover {
+  border: 1px solid red;
+  transition: all 0.5s ease-out;
+  background: transparent;
+  color: red;
+}
+@media (min-width: 900px) {
 }
 
-@media (min-width: 992px){
-
+@media (min-width: 768px) {
+  .flex-item-newslettertwo {
+    width: 50%;
+  }
+  .flex-item-newsletter {
+    width: 50%;
+  }
+  .flex-item-newslettertwo button {
+    width: 40%;
+  }
+  .flex-item-newsletter h3 {
+    font-size: 1.25rem;
+  }
+  .flex-item-newsletter p{
+      font-size: 1rem;
+  }
+  .newsletter-container{
+      font-size: 90%;
+  }
 }
