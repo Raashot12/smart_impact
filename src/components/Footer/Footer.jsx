@@ -1,5 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 // icons
 import TwitterIcon from "../Icons/TwitterIcon";
 import FacebookIcon from "../Icons/FacebookIcon";
@@ -63,6 +64,9 @@ export const getSocialLinks = fillColor => {
 
 const Footer = ({ bgVariant = "dark" }) => {
   const fillColor = bgVariant === "light" ? "#1C1D1A" : "#C4C4C4";
+  const history = useHistory();
+  const getYear = new Date().getFullYear();
+  console.log(getYear);
   return (
     <>
       <section className={`footer-container footer-container-${bgVariant}`}>
@@ -147,7 +151,7 @@ const Footer = ({ bgVariant = "dark" }) => {
               arcu, ut euismod risus ante id arcu. Vestibulum fermentum vene. By
               using this website, you accept our{" "}
               <Link to="/terms-of-use" className="term-policy">
-                Terms of Service
+                Terms of Use
               </Link>{" "}
               and{" "}
               <Link to="/faqs" className="term-policy">
@@ -161,15 +165,8 @@ const Footer = ({ bgVariant = "dark" }) => {
       <section className="footer-bottom text-white text-center">
         <section className=" container-lg ">
           <p className="footer-last-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
-            <br className="non-brake"></br>
-            Praesent tempor suscipit risus, non aliquam felis eleifend eu.
-            <br></br>
-            <span className="brake">
-              Cras tincidunt tellus sit amet leo luctus auctor.Nullam viverra
-              sollicitudin velit. In luctus maximus maximus. Maecenas id diam
-              nec felis molestie ultrices.
-            </span>
+            Copyright © {getYear}. All rights reserved.
+            <a onClick={() => history.push("/privacy")}> Privacy Policy</a>
           </p>
         </section>
       </section>

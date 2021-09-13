@@ -1,0 +1,104 @@
+.contact-container-flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  padding-bottom: 3rem;
+  color: #020202;
+  font-family: Barlow;
+  flex-direction: column-reverse;
+}
+.contact-container-flex p {
+  font-size: 0.6625rem;
+  line-height: 18px;
+}
+.contact-container-flex h1 {
+  color: #334f7d;
+  font-size: 2rem;
+}
+
+.contact-container-flex .telephone-number {
+  font-size: 16px;
+}
+.contact-container-flex .address {
+  margin-top: 2rem;
+}
+.telephone-number {
+  font-weight: bolder;
+  margin-top: 2rem;
+}
+.flex-item-tex-content {
+  width: 100%;
+}
+.map-contact-page {
+  width: 100%;
+  height: 450px;
+}
+.contact-container-flex {
+  font-size: 16px;
+}
+.message-envlope {
+  padding-right: 1rem;
+  color: #334f7d;
+}
+.join-us-container {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+.join-us-container .icon-container-social {
+  display: flex;
+}
+.join-us-container h4 {
+  margin-bottom: 0;
+  color: #99a1b2;
+  font-weight: bolder;
+}
+
+.icon-container-social .icon-border {
+  width: 30px;
+  height: 30px;
+  background-color: #eff0f1;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  margin-left: 1.2rem;
+  justify-content: center;
+}
+.size {
+  color: #334f7d;
+  cursor: pointer;
+}
+/* Privacy Styling Page */
+.privacy-container {
+  font-family: Barlow;
+  color: #020202;
+  margin-top: 1rem;
+}
+.privacy-container p {
+  padding-bottom: 2rem;
+}
+/* Media queries */
+@media (min-width: 900px) {
+  .flex-item-tex-content {
+    width: 50%;
+    padding-left: 3rem;
+  }
+  .map-contact-page {
+    width: 50%;
+  }
+  .contact-container-flex {
+    flex-direction: row;
+    margin-top: 2rem;
+  }
+  .contact-container-flex p {
+    font-size: 1rem;
+    line-height: 28px;
+    padding-right: 0.5rem;
+  }
+  .privacy-container p {
+    padding-left: 2rem;
+  }
+  .privacy-container{
+      margin-top: 2rem;
+  }
+}

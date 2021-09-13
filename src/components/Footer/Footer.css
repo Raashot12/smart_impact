@@ -83,7 +83,13 @@
   align-items: center;
   flex-wrap: wrap;
 }
-
+.footer-last-text a {
+  color: white;
+}
+.footer-last-text a:hover{
+  color: #3ddc84;
+  text-decoration: underline !important;
+}
 .footer-bottom {
   background-color: #1c1d1a;
   height: 71px;

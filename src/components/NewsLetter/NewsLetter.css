@@ -6,6 +6,8 @@
   color: #fff;
   font-family: Barlow;
   padding: 2rem;
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
 }
 .newsletter-text-holder {
   margin-left: 1.5rem;
@@ -24,8 +26,8 @@
 .flex-item-newsletter h3 {
   font-size: 1rem;
 }
-.flex-item-newsletter p{
-    font-size: 0.5625rem
+.flex-item-newsletter p {
+  font-size: 0.5625rem;
 }
 .flex-item-newslettertwo {
   width: 100%;
@@ -50,8 +52,6 @@
   background: transparent;
   color: red;
 }
-@media (min-width: 900px) {
-}
 
 @media (min-width: 768px) {
   .flex-item-newslettertwo {
@@ -66,10 +66,12 @@
   .flex-item-newsletter h3 {
     font-size: 1.25rem;
   }
-  .flex-item-newsletter p{
-      font-size: 1rem;
+  .flex-item-newsletter p {
+    font-size: 1rem;
   }
-  .newsletter-container{
-      font-size: 90%;
+  .newsletter-container {
+    font-size: 90%;
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
   }
 }

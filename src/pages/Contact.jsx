@@ -1,16 +1,16 @@
 import React from "react";
-import BlogHero from "../components/Routes/Blog/BlogHero";
+import ContactSection from "../components/Routes/Contact/ContactSection";
 
 import ScrollToTop from "../components/ScrollToTop";
 
-const Blog = () => {
+const Contact = () => {
   return (
     <div>
       <ScrollToTop>
-        <BlogHero></BlogHero>
+        <ContactSection></ContactSection>
       </ScrollToTop>
     </div>
   );
 };
 
-export default Blog;
+export default Contact;

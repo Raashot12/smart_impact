@@ -8,7 +8,10 @@ import "./styles/bootstrap.css"
 import CompanyDetails from "./components/CompanyDetails/CompanyDetails"
 import Education from "./pages/Education"
 import BuildDev from "./pages/BuildDev";
-import BlogHero from "./components/Routes/Blog/BlogHero";
+import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
+import Privacy from "./pages/Privacy";
+
 export default function App() {
   return (
     <div>
@@ -20,7 +23,9 @@ export default function App() {
           <Route path="/about-us" exact component={CompanyDetails} />
           <Route path="/education" exact component={Education} />
           <Route path="/build-dev" exact component={BuildDev} />
-          <Route path="/blog" exact component={BlogHero} />
+          <Route path="/blog" exact component={Blog} />
+          <Route path="/contact-us" exact component={Contact} />
+          <Route path="/privacy" exact component={Privacy} />
         </Switch>
         <Footer></Footer>
       </BrowserRouter>
