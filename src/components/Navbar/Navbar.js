@@ -112,21 +112,19 @@ const Navbar = () => {
                 <MenuIcon />
               </IconButton>
             ) : (
-              <div className={classes.headerOptions}>
+                <li className={ classes.headerOptions }>
                 {menuItems.map((item, index) => (
                   <NavLink
-                    to={item.pageURL}
-                    activeStyle={{
-                      fontWeight: "bold",
-                      color: "#4F88C7",
-                    }}
-                    className={styles.fontpaddingfornavbar}
+                    to={ item.pageURL }
+                    exact
+                    activeClassName="active"
+                    className={ styles.fontpaddingfornavbar }
                     key={index}
                   >
                     {item.menuTitle}
                   </NavLink>
                 ))}
-              </div>
+                </li>
             )}
           </Toolbar>
         </AppBar>

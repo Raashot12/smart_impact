@@ -46,6 +46,22 @@ body {
 ul {
   list-style-type: none;
 }
+li a:hover{
+  font-weight: bold;
+  color: #334F7D;
+}
+li a.active{
+  background-color: #334F7D;
+  color: white;
+font-weight: bold;
+padding:2px 5px;
+border-radius: .3rem;
+
+
+}
+li a:last-of-type{
+  margin-right: 0;
+}
 a {
   text-decoration: none !important;
 }
@@ -79,9 +95,7 @@ h4 {
   h2 {
     font-size: 2.5rem;
   }
-  h3 {
-    font-size: 1.75rem;
-  }
+  
   h4 {
     font-size: 1rem;
   }

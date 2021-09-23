@@ -37,9 +37,13 @@
   line-height: 19px;
   color: #6e6e6e;
   font-style: normal;
-  padding-right: 40px;
+  margin-right: 40px;
   cursor: pointer;
+  display: block;
+  
 }
+
+
 
 /*Large Screen Size*/
 @media screen and (max-width: 1200px) {
