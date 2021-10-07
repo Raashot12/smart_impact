@@ -34,7 +34,7 @@
   padding-top: 0;
 }
 .accordion-content {
-  transition: 11100ms;
+  transition: all 4ms;
   display: none;
 }
 .accordion-title-bar {
@@ -42,7 +42,7 @@
   line-height: 101.2%;
 }
 .active-accordion {
-  transition: 11100ms;
+  transition: all 4ms;
   display: block;
   width: 100%;
   font-size: 0.75rem;

@@ -1,14 +1,14 @@
-import React from "react"
-import Container from "@material-ui/core/Container"
-import "./CompanyDetails.css"
-import Team from "../../components/Team/Team"
-import Accordion from "./Accordion"
+import React from "react";
+import Container from "@material-ui/core/Container";
+import "./CompanyDetails.css";
+import Team from "../../components/Team/Team";
+import Accordion from "./Accordion";
 // SVG
-import aboutus from "../../assests/images/aboutus.svg"
-import chooseus from "../../assests/images/chooseus.svg"
-import mission from "../../assests/images/mission.svg"
-import believe from "../../assests/images/believe.svg"
-import strenght from "../../assests/images/strenght.svg"
+import aboutus from "../../assests/images/aboutus.svg";
+import chooseus from "../../assests/images/chooseus.svg";
+import mission from "../../assests/images/mission.svg";
+import believe from "../../assests/images/believe.svg";
+import strenght from "../../assests/images/strenght.svg";
 import ScrollToTop from "../ScrollToTop";
 
 const aboutusdata = [
@@ -58,7 +58,6 @@ const aboutusdata = [
 ];
 
 const CompanyDetails = () => {
-  // console.log(isIopen)
   return (
     <div>
       <ScrollToTop>
@@ -69,10 +68,16 @@ const CompanyDetails = () => {
         </div>
         <Container>
           {aboutusdata.map(about => {
-            const { title, content, id, img } = about;
-            return (
-              <Accordion title={title} content={content} key={id} img={img} />
-            );
+            const { title, content, id } = about;
+              return (
+                <Accordion
+                  title={title}
+                  content={content}
+                  key={ id }
+                  id={`${id}`}
+                />
+              );
+            
           })}
         </Container>
         <Team />
@@ -82,4 +87,3 @@ const CompanyDetails = () => {
 };
 
 export default CompanyDetails;
- 

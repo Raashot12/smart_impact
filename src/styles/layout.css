@@ -15,33 +15,8 @@ a{
   text-decoration: none !important;
 }
 
-#main-home-bg {
-  background-image: url(../assets/images/homepage-mobile-skin.svg);
-}
 
-#main-contact-bg {
-  background-image: url(../assets/images/contact-us-mobile-skin.svg);
-}
-#main-vat-bg {
-  background-image: url(../assets/images/local-vat-mobile-skin.svg);
-  background-position: top center;
-  background-size: auto;
-}
-#main-help-bg {
-  background-image: url(../assets/images/help-center-mobile-skin.svg);
-  height: 13.0625rem;
-}
-#main-home-bg main {
-  margin-top: 1rem;
-}
-#main-term-bg {
-  background-image: url(../assets/images//terms-of-use-mobile.svg);
-  height: 19.0625rem;
-}
-.screen {
-  width: 153px;
-  height: 311px;
-}
+
 @media (min-width: 992px) {
   #main-home-bg {
     background-image: url(../assets/images/homepage-desktop-skin.svg);

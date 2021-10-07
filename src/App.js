@@ -11,6 +11,7 @@ import BuildDev from "./pages/BuildDev";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import Privacy from "./pages/Privacy";
+import SinglePost from "./components/SingleBlogPost/SinglePost"
 
 export default function App() {
   return (
@@ -25,7 +26,8 @@ export default function App() {
           <Route path="/build-dev" exact component={BuildDev} />
           <Route path="/blog" exact component={Blog} />
           <Route path="/contact-us" exact component={Contact} />
-          <Route path="/privacy" exact component={Privacy} />
+          <Route path="/privacy" exact component={ Privacy } />
+          <Route path="/single-post" exact component={ SinglePost } />
         </Switch>
         <Footer></Footer>
       </BrowserRouter>
