@@ -117,48 +117,6 @@ const Footer = ({ bgVariant = "dark" }) => {
                 </div>
               </div>
             </div>
-            <hr className="divider" />
-            <p className="footer-main-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              dictum felis quis placerat bibendum. Maecenas pharetra tortor
-              tristique nisi ultricies, quis ultricies lectus vulputate.
-              <br></br>
-              <br></br> Maecenas lacinia lacus in viverra gravida. Vestibulum ut
-              mi in nisi laoreet viverra eu ultricies ante. Cras mollis ex
-              neque, non pharetra ex ultricies auctor. Integer id dapibus orci,
-              id volutpat diam. Sed ac dolor sed nibh pellentesque malesuada nec
-              et ligula. Sed in varius mauris, tincidunt auctor felis. Nunc
-              euismod vel augue at accumsan. Nullam condimentum elit nisi,
-              venenatis hendrerit nisi lobortis eget. In cursus pulvinar
-              eleifend. Nulla tincidunt, dolor id facilisis porta, turpis dolor
-              aliquet neque, in malesuada felis sem non dolor. Ut semper, purus
-              nec mattis sodales, nisl nulla posuere eros, at dignissim nisl
-              enim quis arcu.<br></br>
-              <br></br> Nunc suscipit, leo a vehicula faucibus, ex diam porta
-              arcu, ut euismod risus ante id arcu. Vestibulum fermentum
-              venenatis gravida. Etiam nibh eros, pretium sit amet diam ut,
-              tempus congue dolor. Donec laoreet interdum dui, nec suscipit
-              ipsum pulvinar nec. In id risus in justo dictum condimentum. Sed
-              et ullamcorper nisi. Mauris ultricies sapien id elit luctus
-              bibendum. Nam pharetra, dolor et volutpat congue, sapien metus
-              blandit nulla, ut tincidunt est risus sed enim. In pharetra justo
-              eros, et ultrices leo suscipit porta. Phasellus sed nisi at erat
-              aliquet sagittis. Vestibulum aliquam massa a eros pulvinar, quis
-              varius orci elementum. Praesent tincidunt dolor mi, et faucibus
-              sem fringilla at. Nulla facilisi. Curabitur accumsan iaculis odio,
-              ut molestie eros lobortis vitae. <br></br>
-              <br></br>Nunc suscipit, leo a vehicula faucibus, ex diam porta
-              arcu, ut euismod risus ante id arcu. Vestibulum fermentum vene. By
-              using this website, you accept our{" "}
-              <Link to="/terms-of-use" className="term-policy">
-                Terms of Use
-              </Link>{" "}
-              and{" "}
-              <Link to="/faqs" className="term-policy">
-                FAQs
-              </Link>
-              .
-            </p>
           </div>
         </Container>
       </section>
