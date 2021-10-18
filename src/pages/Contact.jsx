@@ -5,7 +5,7 @@ import ScrollToTop from "../components/ScrollToTop";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="contact-us-grand">
       <ScrollToTop>
         <ContactSection></ContactSection>
       </ScrollToTop>

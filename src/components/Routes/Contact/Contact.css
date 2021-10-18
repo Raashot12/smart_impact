@@ -78,11 +78,15 @@
 .privacy-container p {
   padding-bottom: 2rem;
 }
+
 /* Media queries */
 @media (min-width: 900px) {
   .contact-container-flex .telephone-number{
     font-size: 1.75rem;
   }
+  .contact-us-grand{
+  height: calc(100vh - 180px);
+}
   .join-us-container{
     margin-bottom: 0;
   }
