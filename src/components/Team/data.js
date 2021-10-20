@@ -6,7 +6,7 @@ const reviews = [
     name: "Alabi Segun",
     role: "Director of Build and Development",
     image: Segunimg,
-    text: "He is a graduate of Ibadan Polytehnic. He is value laden and efficient in service delivery.",
+    text: "He is a graduate and an enterprenuer. Through his professionalism and dedication, he has shape out cities of tomorrow through long, medium and short-term development plans and policies.",
   },
   {
     id: 2,

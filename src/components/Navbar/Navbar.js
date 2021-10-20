@@ -1,4 +1,5 @@
-import React, { useState } from "react"
+/* eslint-disable no-unused-vars */
+import React, { useState } from "react";
 import {
   AppBar,
   CssBaseline,
@@ -11,14 +12,15 @@ import {
   Toolbar,
   Container,
   useMediaQuery,
-} from "@material-ui/core"
-import { Menu as MenuIcon, Close as CloseIcon } from "@material-ui/icons"
-import { useTheme } from "@material-ui/core/styles"
-import { useHistory } from "react-router-dom"
-import logo from "../../assests/images/Logo.png"
-import useStyles from "./style"
-import styles from "../../components/Navbar/Navbar.module.css"
-import { NavLink } from "react-router-dom"
+} from "@material-ui/core";
+import { Menu as MenuIcon, Close as CloseIcon } from "@material-ui/icons";
+import { useTheme } from "@material-ui/core/styles";
+import { useHistory } from "react-router-dom";
+import logo from "../../assests/images/Logo.png";
+import useStyles from "./style";
+import styles from "../../components/Navbar/Navbar.module.css";
+import { NavLink } from "react-router-dom";
+import UseDocTitle from "../../Utilities/UseDocTitle";
 
 const menuItems = [
   {
@@ -45,24 +47,24 @@ const menuItems = [
     menuTitle: "Contact Us",
     pageURL: "/contact-us",
   },
-]
+];
 
 const Navbar = () => {
-  const [mobileOpen, setMobileOpen] = useState(false)
-
-  const classes = useStyles()
-  const history = useHistory()
-  const theme = useTheme()
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"))
+  const [mobileOpen, setMobileOpen] = useState( false );
+  const [doctitle, setDocTitle] = UseDocTitle( " " );
+  const classes = useStyles();
+  const history = useHistory();
+  const theme = useTheme();
+  const isMobile = useMediaQuery( theme.breakpoints.down( "sm" ) );
 
   const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen)
-  }
+    setMobileOpen( !mobileOpen );
+  };
 
   const handleButtonClick = pageURL => {
-    history.push(pageURL)
-    if (isMobile) handleDrawerToggle()
-  }
+    history.push( pageURL );
+    if ( isMobile ) handleDrawerToggle();
+  };
 
   const drawer = (
     <div>
@@ -79,7 +81,7 @@ const Navbar = () => {
         ))}
       </List>
     </div>
-  )
+  );
 
   return (
     <div className={classes.root}>
@@ -96,7 +98,7 @@ const Navbar = () => {
           >
             <div
               onClick={() => {
-                history.push("/")
+                history.push( "/" );
               }}
             >
               <img src={logo} alt="Logo" className={classes.title} />
@@ -116,6 +118,7 @@ const Navbar = () => {
                 {menuItems.map((item, index) => (
                   <NavLink
                     to={ item.pageURL }
+                    onClick={ () => setDocTitle( item.pageURL ) }
                     exact
                     activeClassName="active"
                     className={ styles.fontpaddingfornavbar }
@@ -156,7 +159,8 @@ const Navbar = () => {
         </nav>
       </Container>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
+

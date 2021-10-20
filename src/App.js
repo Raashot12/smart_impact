@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, } from "react"
 import Navbar from "./components/Navbar/Navbar"
 import { BrowserRouter, Route, Switch } from "react-router-dom"
 import Welcome from "./components/Navbar/Welcome"
@@ -13,7 +13,17 @@ import Blog from "./pages/Blog";
 import Privacy from "./pages/Privacy";
 import SinglePost from "./components/SingleBlogPost/SinglePost"
 
+
 export default function App() {
+
+
+  useEffect( () => {
+   document.title = `Smart Impact Consult|LTD ${ window.location.pathname }`
+
+    return () => {
+
+    }
+  }, [] )
   return (
     <div>
       <BrowserRouter>
@@ -35,4 +45,49 @@ export default function App() {
   );
 }
 
+// import React from "react"
+// function App() {
+//   const [timer, setTimer] = React.useState( 60 )
 
+//   const start = () => {
+//     setInterval( () => {
+//       setTimer( timer => timer - 1 )
+//       console.log( "timer value:", timer )  // ?
+//     }, 1000 )
+//   }
+
+//   React.useEffect( start, [] )
+
+//   return <p>{ timer }</p>
+// }
+// export default App
+// import React from "react"
+// class App extends React.Component {
+//   constructor ( props ) {
+//     // set the default internal state
+//     this.state = {
+//       cnt: 0,
+//       hover: false
+//     };
+//     super( props );
+//   }
+
+//   funcs = {
+//     onClick: () => {
+//       this.setState( ( s ) => ( { cnt: s.cnt + 1 } ) );
+//     },
+//     onHover: () => {
+//       this.setState( ( s ) => ( { hover: !s.hover } ) );
+//     }
+//   };
+
+//   render() {
+//     const s = this.state;
+//     return (
+//       <div { ...this.funcs }>
+//         { Comp => clicks: { s.cnt }, hover: { "" + s.hover }}
+//       </div>
+//     );
+//   }
+// }
+// export default App
