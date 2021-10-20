@@ -6,9 +6,8 @@ function UseDocTitle( title ) {
     const [doctitle, setDocTitle] = useState( title );
 
     useEffect( () => {
-        document.title = `Smart Impact Consult|LTD${ doctitle }`;
+        document.title = `Smart Impact Consult|LTD${ doctitle || "|Home" }`;
     }, [doctitle] );
-
     return [doctitle, setDocTitle];
 }
 export default UseDocTitle

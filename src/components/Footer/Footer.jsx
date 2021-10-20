@@ -1,6 +1,9 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { Link, useHistory } from "react-router-dom";
+import UseDocTitle from "../../Utilities/UseDocTitle";
+
 // icons
 import TwitterIcon from "../Icons/TwitterIcon";
 import FacebookIcon from "../Icons/FacebookIcon";
@@ -17,18 +20,22 @@ const footerLinks = [
   {
     title: "Build & Dev",
     href: "/build-dev",
+    documenttitle: "|Build and Dev",
   },
   {
     title: "Education",
     href: "/education",
+    documenttitle: "|Education",
   },
   {
     title: "About Us",
     href: "/about-us",
+    documenttitle: "|About Us",
   },
   {
     title: "Contact Us",
     href: "/contact-us",
+    documenttitle: "|Contact Us",
   },
 ];
 
@@ -67,6 +74,7 @@ const Footer = ({ bgVariant = "dark" }) => {
   const history = useHistory();
   const getYear = new Date().getFullYear();
   console.log(getYear);
+  const [doctitle, setDocTitle] = UseDocTitle(" ");
   return (
     <>
       <section className={`footer-container footer-container-${bgVariant}`}>
@@ -75,14 +83,18 @@ const Footer = ({ bgVariant = "dark" }) => {
             <div>
               <div className="footer-items">
                 <div>
-                  <Link to="/">
+                  <Link to="/" onClick={() => setDocTitle("|Home")}>
                     <SamartImpact />
                   </Link>
                 </div>
                 <div className="d-flex flex-column flex-lg-row justify-content-lg-between position-relative">
                   <div className="d-flex justify-content-between footer-links">
                     {footerLinks.map(link => (
-                      <Link to={link.href} key={link.href}>
+                      <Link
+                        to={link.href}
+                        key={link.href}
+                        onClick={() => setDocTitle(link.documenttitle)}
+                      >
                         {link.title}
                       </Link>
                     ))}

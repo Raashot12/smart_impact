@@ -1,4 +1,4 @@
-import React, { useEffect, } from "react"
+import React from "react"
 import Navbar from "./components/Navbar/Navbar"
 import { BrowserRouter, Route, Switch } from "react-router-dom"
 import Welcome from "./components/Navbar/Welcome"
@@ -15,15 +15,6 @@ import SinglePost from "./components/SingleBlogPost/SinglePost"
 
 
 export default function App() {
-
-
-  useEffect( () => {
-   document.title = `Smart Impact Consult|LTD ${ window.location.pathname }`
-
-    return () => {
-
-    }
-  }, [] )
   return (
     <div>
       <BrowserRouter>

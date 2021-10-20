@@ -26,26 +26,32 @@ const menuItems = [
   {
     menuTitle: "Home",
     pageURL: "/",
+    documenttitle: "|Home"
   },
   {
     menuTitle: "Blog",
     pageURL: "/blog",
+    documenttitle: "|Blog"
   },
   {
     menuTitle: "Build & Dev.",
     pageURL: "/build-dev",
+    documenttitle: "|Build and Dev"
   },
   {
     menuTitle: "Education",
     pageURL: "/education",
+    documenttitle: "|Education"
   },
   {
     menuTitle: "About Us",
     pageURL: "/about-us",
+    documenttitle: "|About Us"
   },
   {
     menuTitle: "Contact Us",
     pageURL: "/contact-us",
+    documenttitle: "|Contact Us"
   },
 ];
 
@@ -99,6 +105,7 @@ const Navbar = () => {
             <div
               onClick={() => {
                 history.push( "/" );
+                setDocTitle( "|Home" )
               }}
             >
               <img src={logo} alt="Logo" className={classes.title} />
@@ -118,7 +125,7 @@ const Navbar = () => {
                 {menuItems.map((item, index) => (
                   <NavLink
                     to={ item.pageURL }
-                    onClick={ () => setDocTitle( item.pageURL ) }
+                    onClick={ () => setDocTitle( item.documenttitle ) }
                     exact
                     activeClassName="active"
                     className={ styles.fontpaddingfornavbar }
