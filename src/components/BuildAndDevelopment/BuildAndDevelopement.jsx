@@ -1,8 +1,11 @@
-import React from "react"
+import React, { useContext } from "react"
 import CenterContent from "../../Utilities/CenterContent"
 import Container from "@material-ui/core/Container"
 import aboutus from "../../assests/images/aboutus.svg"
 import { Link } from "react-router-dom"
+import moment from "moment";
+import { Context } from "../../store/GlobalStateProvider";
+import Loading from "../../Utilities/Loading";
 const blog = [
   {
     img: aboutus,
@@ -46,6 +49,21 @@ const blog = [
   },
 ]
 const BuildAndDevelopement = () => {
+  const { build, err, isLoaded } = useContext( Context );
+  if ( err ) {
+    return <h3 className="text-center alert alert-danger">{ err }</h3>;
+  }
+  if ( !isLoaded ) {
+    return (
+      <>
+        <CenterContent>
+          <h3 className="ourservice">GENERAL NEWS</h3>
+          <div className="underline"></div>
+        </CenterContent>
+        <Loading />
+      </>
+    );
+  }
   return (
     <div>
       <Container>
@@ -54,19 +72,21 @@ const BuildAndDevelopement = () => {
           <div className="underline"></div>
         </CenterContent>
         <div className="general-new-flex-container">
-          {blog.map(news => {
+          { build.map( news => {
             return (
-              <div key={news.id} className="general-news-cards">
+              <div key={ news.id } className="general-news-cards">
                 <article>
                   <img
-                    src={news.img}
+                    src={ news?.image.url }
                     height="150px"
                     width="100%"
                     alt="card news blog"
                   />
-                  <h4>{news.title}</h4>
-                  <p>{news.content}</p>
-                  <p style={{ textAlign: "right" }}>{news.date}</p>
+                  <h4>{ news.title }</h4>
+                  <p>{ news.description }</p>
+                  <p style={ { textAlign: "right" } }>
+                    { moment( news.published_at ).format( "LL" ) }
+                  </p>
                   <button>Read More...</button>
                 </article>
               </div>

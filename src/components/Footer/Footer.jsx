@@ -73,7 +73,7 @@ const Footer = ({ bgVariant = "dark" }) => {
   const fillColor = bgVariant === "light" ? "#1C1D1A" : "#C4C4C4";
   const history = useHistory();
   const getYear = new Date().getFullYear();
-  console.log(getYear);
+
   const [doctitle, setDocTitle] = UseDocTitle(" ");
   return (
     <>

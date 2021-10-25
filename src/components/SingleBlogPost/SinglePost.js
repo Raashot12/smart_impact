@@ -22,7 +22,7 @@ const SinglePost = () => {
           <div className="text-navigate-container">
             <p>Home </p>
             <i className="fas fa-angle-double-right"></i>
-            <p>NYSC Camp Orientation Begin Today</p>
+            <p>NYSC Camp Orientation Begin Today </p>
           </div>
           <div className="parent-container-article">
             <div className="article-container">
@@ -84,7 +84,26 @@ const SinglePost = () => {
                 etc.
               </p>
             </div>
-            <div className="article-sidebar"></div>
+            <div className="article-sidebar">
+              <h3>Categories</h3>
+              <hr></hr>
+              <div style={ { display: "flex", justifyContent: "space-between", alignItems: "center" } }>
+                <p>Education</p>
+                <span>(2)</span>
+              </div>
+              <hr></hr>
+              <div style={ { display: "flex", justifyContent: "space-between", alignItems: "center" } }>
+                <p>Build & Development</p>
+                <span>(5)</span>
+              </div>
+              <hr></hr>
+              <section className="trending-section">
+                <h3>
+                  Trending
+                </h3>
+
+              </section>
+            </div>
           </div>
         </div>
       </Container>

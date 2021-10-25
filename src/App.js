@@ -12,11 +12,13 @@ import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import Privacy from "./pages/Privacy";
 import SinglePost from "./components/SingleBlogPost/SinglePost"
+import GlobalStateProvider from "./store/GlobalStateProvider"
 
 
 export default function App() {
   return (
     <div>
+      <GlobalStateProvider>
       <BrowserRouter>
         <Welcome />
         <Navbar />
@@ -32,6 +34,7 @@ export default function App() {
         </Switch>
         <Footer></Footer>
       </BrowserRouter>
+      </GlobalStateProvider>
     </div>
   );
 }

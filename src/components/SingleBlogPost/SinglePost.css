@@ -46,8 +46,15 @@
 }
 .article-sidebar {
   width: 101%;
-  background-color: yellowgreen;
-  height: 600px;
+  height: fit-content;
+  font-family: "Spartan", sans-serif;
+  color: #222222;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+}
+.article-sidebar h3 {
+  font-size: 14px;
+  font-weight: 600;
 }
 .date-posted {
   margin-right: 1rem;
@@ -82,7 +89,7 @@
   }
   .article-sidebar {
     width: 30%;
-    background-color: yellowgreen;
+    margin-top: 0;
   }
   .posted-flex-container {
     font-size: 14px;
