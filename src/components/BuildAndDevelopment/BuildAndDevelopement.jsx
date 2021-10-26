@@ -5,48 +5,8 @@ import { Link } from "react-router-dom"
 import moment from "moment";
 import { Context } from "../../store/GlobalStateProvider";
 import Loading from "../../Utilities/Loading";
-// const blog = [
-//   {
-//     img: aboutus,
-//     title: "NYSC Camp Orientation Begin Today",
-//     content:
-//       "Maecenas lacinia lacus in viverra gravida. Vestibulum ut mi in nisi laoreet viverra eu ultricies ante. Cras mollis ex neque.",
-//     date: "3rd September, 2021",
-//     id: 1,
-//   },
-//   {
-//     img: aboutus,
-//     title: "LASU well-known Killed",
-//     content:
-//       "Maecenas lacinia lacus in viverra gravida. Vestibulum ut mi in nisi laoreet viverra eu ultricies ante. Cras mollis ex neque.",
-//     date: "1st September, 2021",
-//     id: 2,
-//   },
-//   {
-//     img: aboutus,
-//     title: "Real Estate Land at Ibadan",
-//     content:
-//       "Maecenas lacinia lacus in viverra gravida. Vestibulum ut mi in nisi laoreet viverra eu ultricies ante. Cras mollis ex neque.",
-//     date: "1st September, 2021",
-//     id: 3,
-//   },
-//   {
-//     img: aboutus,
-//     title: "UI Admission form is out",
-//     content:
-//       "Maecenas lacinia lacus in viverra gravida. Vestibulum ut mi in nisi laoreet viverra eu ultricies ante. Cras mollis ex neque.",
-//     date: "4th September, 2021",
-//     id: 3,
-//   },
-//   {
-//     img: aboutus,
-//     title: "Lagos is in mess as Lekki is fluided with water",
-//     content:
-//       "Maecenas lacinia lacus in viverra gravida. Vestibulum ut mi in nisi laoreet viverra eu ultricies ante. Cras mollis ex neque.",
-//     date: "4th September, 2021",
-//     id: 4,
-//   },
-// ]
+
+
 const BuildAndDevelopement = () => {
   const { build, err, isLoaded } = useContext( Context );
   if ( err ) {

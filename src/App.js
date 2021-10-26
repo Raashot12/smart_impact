@@ -19,21 +19,22 @@ export default function App() {
   return (
     <div>
       <GlobalStateProvider>
-      <BrowserRouter>
-        <Welcome />
-        <Navbar />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about-us" exact component={CompanyDetails} />
-          <Route path="/education" exact component={Education} />
-          <Route path="/build-dev" exact component={BuildDev} />
-          <Route path="/blog" exact component={Blog} />
-          <Route path="/contact-us" exact component={Contact} />
-          <Route path="/privacy" exact component={ Privacy } />
-          <Route path="/single-post" exact component={ SinglePost } />
-        </Switch>
-        <Footer></Footer>
-      </BrowserRouter>
+        <BrowserRouter>
+          <Welcome />
+          <Navbar />
+          <Switch>
+            <Route path="/" exact component={ Home } />
+            <Route path="/about-us" exact component={ CompanyDetails } />
+            <Route path="/education" exact component={ Education } />
+            <Route path="/build-dev" exact component={ BuildDev } />
+            <Route path="/blog" exact component={ Blog } />
+            <Route path="/contact-us" exact component={ Contact } />
+            <Route path="/privacy" exact component={ Privacy } />
+            <Route path="/education/:id" exact component={ SinglePost } />
+            <Route path="/build-dev/:id" exact component={ SinglePost } />
+          </Switch>
+          <Footer></Footer>
+        </BrowserRouter>
       </GlobalStateProvider>
     </div>
   );
