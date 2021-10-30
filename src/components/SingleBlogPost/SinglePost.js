@@ -47,7 +47,7 @@ const SinglePost = () => {
       <ScrollToTop>
         { singleData.map( single => {
           return (
-            <div>
+            <div key={single.id}>
             <SinglePostContainer>
               <Container>
                 <div className="faded-card-container">
@@ -76,7 +76,7 @@ const SinglePost = () => {
                           <p>on { single.category.name }</p>
                       </div>
                     </div>
-                    <p>
+                    <p className="aritcle-content-for-singlepage">
                         { single.content }
                       </p>
                       <div className="mobile-contact-form-desktop">
@@ -141,7 +141,7 @@ const SinglePost = () => {
                 </div>
                 </div>
                 <div className="mobile-contact-form">
-                  <Contact />
+                  <Contact  />
                 </div>
               </Container>
             </div>

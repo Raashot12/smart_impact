@@ -19,7 +19,6 @@ const BuildAndDevHero = () => {
         );
       });
       // If there is current input value then filter based on the value
-      console.log( "hELLO WROLD" )
       setBuildPage( results );
     } else {
       setBuildPage( buildDefaultData );

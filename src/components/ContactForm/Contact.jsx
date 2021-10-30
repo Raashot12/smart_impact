@@ -10,7 +10,7 @@ const Contact = () => {
         <div className="contact-us-contact">
             <Container>
                 <div className="form-container">
-                    <h1 className="contactus-text">Contact</h1>
+                    <h1 className="contactus-text">Comments</h1>
                     <form onSubmit={ handleFormSubmit }>
                         <div className="input-container-form">
                             <div>
@@ -37,7 +37,7 @@ const Contact = () => {
                             <textarea type="text" placeholder="Enter your message" />
                         </div>
                         <div className="input-container-form">
-                            <button className="btn-form">Submit</button>
+                            <button className="btn-form">Submit Comment</button>
                         </div>
                     </form>
                 </div>

@@ -13,6 +13,7 @@ import Blog from "./pages/Blog";
 import Privacy from "./pages/Privacy";
 import SinglePost from "./components/SingleBlogPost/SinglePost"
 import GlobalStateProvider from "./store/GlobalStateProvider"
+import BuildSingle from "./SingleBuildDev/BuildSingle"
 
 
 export default function App() {
@@ -31,7 +32,7 @@ export default function App() {
             <Route path="/contact-us" exact component={ Contact } />
             <Route path="/privacy" exact component={ Privacy } />
             <Route path="/education/page/:id" exact component={ SinglePost } />
-            {/* <Route path="/build-dev/:id" exact component={ SinglePost } /> */ }
+            <Route path="/build-dev/page/:id" exact component={ BuildSingle } />
           </Switch>
           <Footer></Footer>
         </BrowserRouter>
