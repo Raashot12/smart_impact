@@ -30,8 +30,8 @@ export default function App() {
             <Route path="/blog" exact component={ Blog } />
             <Route path="/contact-us" exact component={ Contact } />
             <Route path="/privacy" exact component={ Privacy } />
-            <Route path="/education/:id" exact component={ SinglePost } />
-            <Route path="/build-dev/:id" exact component={ SinglePost } />
+            <Route path="/education/page/:id" exact component={ SinglePost } />
+            {/* <Route path="/build-dev/:id" exact component={ SinglePost } /> */ }
           </Switch>
           <Footer></Footer>
         </BrowserRouter>

@@ -7,13 +7,12 @@ import BuildAndCards from "./BuildAndCards";
 import { Context } from "../../../store/GlobalStateProvider";
 import Loading from "../../../Utilities/Loading";
 const BuildAndDevHero = () => {
-  // const [defaultData, setDefaultData] = useState( [] );
-  const { build, defaultData, blogPage, setBlogPage, isLoaded, err } = useContext( Context );
+  const { build, isLoaded, err, buildPage, setBuildPage, buildDefaultData } = useContext( Context );
   const [faqtitle, setFaqTitle] = useState( "" );
   const search = e => {
     const keyword = e.target.value;
     if (keyword !== "") {
-      const results = blogPage.filter( question => {
+      const results = buildPage.filter( question => {
         return (
           question.title.trim().toLowerCase().includes(keyword.toLowerCase()) ||
           question.description.toLowerCase().startsWith( keyword.toLowerCase() )
@@ -21,9 +20,9 @@ const BuildAndDevHero = () => {
       });
       // If there is current input value then filter based on the value
       console.log( "hELLO WROLD" )
-      setBlogPage( results );
+      setBuildPage( results );
     } else {
-      setBlogPage( defaultData );
+      setBuildPage( buildDefaultData );
     }
     setFaqTitle(keyword);
   };
@@ -44,7 +43,7 @@ const BuildAndDevHero = () => {
         </Container>
       </div>
       <Container>
-        { blogPage.length === 0 && (
+        { buildPage.length === 0 && (
           <h1
             className="alert-warning text-center"
             style={{ marginTop: "1rem" }}
@@ -59,7 +58,7 @@ const BuildAndDevHero = () => {
               <h3 className="text-center alert alert-danger">{ err }</h3>
             ) : !isLoaded ? (
               <Loading />
-            ) : blogPage[0] !== "default" ? blogPage.map( news => {
+              ) : buildPage[0] !== "default" ? buildPage.map( news => {
               return <BuildAndCards { ...news } key={ news.id } />;
             } ) : null
             }

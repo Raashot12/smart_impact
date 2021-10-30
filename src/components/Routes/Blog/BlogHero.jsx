@@ -60,7 +60,7 @@ const BlogHero = () => {
               <h3 className="text-center alert alert-danger">{ err }</h3>
             ) : !isLoaded ? (
               <Loading />
-            ) : blogData[0] !== "default" ? blogData.map( news => {
+              ) : blogData[0] !== "default" ? blogData.map( news => {
               return <BlogCard { ...news } key={ news.id } />;
             } ) : null
             }

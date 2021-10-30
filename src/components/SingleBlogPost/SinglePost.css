@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400&display=swap");
 .faded-card-container {
   width: 50%;
   background: rgba(51, 79, 125, 0.5);
@@ -77,6 +78,35 @@
   display: flex;
   align-items: center;
   margin-right: 1rem;
+}
+.sidebar-cards-detailed-page {
+  width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.text-container-sidebar h3 {
+  margin-top: 1rem;
+  line-height: normal;
+  font-family: "Spartan", sans-serif;
+  font-size: 16px;
+}
+.text-container-sidebar p {
+  font-family: "Spartan", sans-serif;
+  font-size: 0.6rem;
+}
+/* .sidebar-cards-detailed-page:hover {
+} */
+.sidebar-cards-detailed-page:hover img {
+  transform: scale(1.0423);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.sidebar-cards-detailed-page:hover img {
+  display: flex;
 }
 @media (max-width: 676px) {
   .faded-card-container {

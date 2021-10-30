@@ -12,7 +12,7 @@ const EducationCards = ( { id, date, title, description, image } ) => {
         <p>{ description }</p>
 
         <p style={ { textAlign: "right" } }>{ moment( date ).format( "LL" ) }</p>
-        <Link to={ `education/${ id }` }> <button>Read More...</button></Link>
+        <Link to={ `education/page/${ id }` }> <button>Read More...</button></Link>
       </article>
     </div>
   );
