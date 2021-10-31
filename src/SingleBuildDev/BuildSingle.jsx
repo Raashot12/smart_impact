@@ -12,7 +12,7 @@ import { useParams, useHistory } from "react-router-dom";
 import ScrollToTop from "../components/ScrollToTop";
 import Contact from "../components/ContactForm/Contact";
 const BuildSingle = () => {
-    const { education, isLoaded, err, buildLength, educationLength } =
+    const { build, isLoaded, err, buildLength, educationLength } =
         useContext( Context );
     const [errMessage, setErrormessage] = useState( null );
     const [componentIsLoading, setCompontentIsloading] = useState( false );
@@ -79,6 +79,9 @@ const BuildSingle = () => {
                                             <p className="aritcle-content-for-singlepage">
                                                 { single.content }
                                             </p>
+                                            <div>
+                                                <h1>RASHEED IMAGES</h1>
+                                            </div>
                                             <div className="mobile-contact-form-desktop">
                                                 <Contact />
                                             </div>
@@ -123,13 +126,13 @@ const BuildSingle = () => {
                                                     ) : !isLoaded ? (
                                                         <Loading />
                                                     ) : (
-                                                        education.slice( 0, 4 ).map( edu => {
+                                                                build.slice( 0, 4 ).map( buildpage => {
                                                             return (
-                                                                <div className="sidebar-cards-detailed-page" key={ edu.id } onClick={ () => history.push( `/education/page/${ edu.id }` ) }>
-                                                                    <img src={ edu.image?.url } alt="" width="100%" />
+                                                                <div className="sidebar-cards-detailed-page" key={ buildpage.id } onClick={ () => history.push( `/build-dev/page/${ buildpage.id }` ) }>
+                                                                    <img src={ buildpage.image?.url } alt="" width="100%" height="250px" />
                                                                     <div className="text-container-sidebar">
-                                                                        <h3> { edu.title }</h3>
-                                                                        <p>{ moment( edu.date ).format( "LL" ) }</p>
+                                                                        <h3> { buildpage.title }</h3>
+                                                                        <p>{ moment( buildpage.date ).format( "LL" ) }</p>
                                                                     </div>
                                                                 </div>
                                                             );
