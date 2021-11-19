@@ -8,7 +8,7 @@ import Loading from "../../Utilities/Loading";
 
 
 const BuildAndDevelopement = () => {
-  const { build, err, isLoaded, categories } = useContext( Context );
+  const { build, err, isLoaded } = useContext( Context );
   if ( err ) {
     return <h3 className="text-center alert alert-danger">{ err }</h3>;
   }
@@ -46,7 +46,7 @@ const BuildAndDevelopement = () => {
                   <p style={ { textAlign: "right" } }>
                     { moment( news.published_at ).format( "LL" ) }
                   </p>
-                  <button>Read More...</button>
+                  <Link to={ `/build-dev/page/${ news.id }` }><button>Read More...</button></Link>
                 </article>
               </div>
             )

@@ -89,7 +89,7 @@ const EudcationNews = () => {
                   <p style={ { textAlign: "right" } }>
                     { moment( news.published_at ).format( "LL" ) }
                   </p>
-                  <button>Read More...</button>
+                  <Link to={ `/education/page/${ news.id }` }><button>Read More...</button></Link>
                 </article>
               </div>
             )
