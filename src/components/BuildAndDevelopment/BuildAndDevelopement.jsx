@@ -8,7 +8,7 @@ import Loading from "../../Utilities/Loading";
 
 
 const BuildAndDevelopement = () => {
-  const { build, err, isLoaded } = useContext( Context );
+  const { build, err, isLoaded, categories } = useContext( Context );
   if ( err ) {
     return <h3 className="text-center alert alert-danger">{ err }</h3>;
   }

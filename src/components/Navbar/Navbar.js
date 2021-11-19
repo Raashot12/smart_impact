@@ -127,7 +127,7 @@ const Navbar = () => {
                     to={ item.pageURL }
                     onClick={ () => setDocTitle( item.documenttitle ) }
                     exact
-                    activeClassName="active"
+                    // activeClassName="active"
                     className={ styles.fontpaddingfornavbar }
                     key={index}
                   >
@@ -144,7 +144,7 @@ const Navbar = () => {
           <Hidden smUp implementation="css">
             <Drawer
               variant="temporary"
-              anchor={theme.direction === "rtl" ? "right" : "left"}
+              anchor={ theme.direction === "ltr" ? "right" : "left" }
               open={mobileOpen}
               onClose={handleDrawerToggle}
               classes={{

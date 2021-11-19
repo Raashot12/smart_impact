@@ -22,12 +22,12 @@ const BlogHero = () => {
       } );
       // If there is current input value then filter based on the value
       setBlogData( results );
-      console.log( results )
     } else {
       setBlogData( blogDataPage );
     }
     setFaqTitle( keyword );
   };
+  console.log( blogData )
   return (
     <div>
       <div className="education-hero-img" id="build-dev-hero-img">
@@ -57,7 +57,9 @@ const BlogHero = () => {
         {
           <div className="education-item-container">
             { err ? (
-              <h3 className="text-center alert alert-danger">{ err }</h3>
+              <div style={ { height: "100vh" } }>
+                <h3 className="text-center alert alert-danger  error-display-message" >{ err }</h3>
+              </div>
             ) : !isLoaded ? (
               <Loading />
               ) : blogData[0] !== "default" ? blogData.map( news => {

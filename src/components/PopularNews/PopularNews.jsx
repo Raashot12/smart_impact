@@ -42,7 +42,6 @@ import Loading from "../../Utilities/Loading";
 // ];
 const PopularNews = () => {
   const { categories, err, isLoaded } = useContext( Context );
-
   if ( err ) {
     return <h3 className="text-center alert alert-danger">{ err }</h3>;
   }
@@ -80,7 +79,8 @@ const PopularNews = () => {
                   <p style={ { textAlign: "right" } }>
                     { moment( news.published_at ).format( "LL" ) }
                   </p>
-                  <button>Read More...</button>
+                  { news.category === 1 ? <Link to={ `/education/page/${ news.id }` }><button>Read More...</button></Link> : news.category === 3 ? <Link to={ `/build-dev/page/${ news.id }` }><button>Read More...</button></Link> : "" }
+
                 </article>
               </div>
             );

@@ -54,7 +54,9 @@ const BuildAndDevHero = () => {
         {
           <div className="education-item-container">
             { err ? (
-              <h3 className="text-center alert alert-danger">{ err }</h3>
+              <div style={ { height: "100vh" } }>
+                <h3 className="text-center alert alert-danger  error-display-message" >{ err }</h3>
+              </div>
             ) : !isLoaded ? (
               <Loading />
               ) : buildPage[0] !== "default" ? buildPage.map( news => {
