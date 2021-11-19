@@ -1,6 +1,7 @@
 import React from "react";
 import moment from "moment";
-const BlogCard = ( { date, title, description, image } ) => {
+import { Link } from "react-router-dom"
+const BlogCard = ( { date, title, description, image, category, id } ) => {
   return (
     <div className="education-news-cards">
       <article>
@@ -8,7 +9,7 @@ const BlogCard = ( { date, title, description, image } ) => {
         <h4>{title}</h4>
         <p>{ description }</p>
         <p style={ { textAlign: "right" } }>{ moment( date ).format( "LL" ) }</p>
-        <button>Read More...</button>
+        { category?.id === 1 ? <Link to={ `/education/page/${ id }` }><button>Read More...</button></Link> : category?.id === 3 ? <Link to={ `/build-dev/page/${ id }` }><button>Read More...</button></Link> : "" }
       </article>
     </div>
   );

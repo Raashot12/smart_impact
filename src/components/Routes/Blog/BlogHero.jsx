@@ -27,7 +27,7 @@ const BlogHero = () => {
     }
     setFaqTitle( keyword );
   };
-  console.log( blogData )
+ console.log( blogData )
   return (
     <div>
       <div className="education-hero-img" id="build-dev-hero-img">
