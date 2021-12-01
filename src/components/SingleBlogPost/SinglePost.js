@@ -11,6 +11,9 @@ import Loading from "../../Utilities/Loading";
 import { useParams, useHistory } from "react-router-dom";
 import ScrollToTop from "../ScrollToTop";
 import Contact from "../ContactForm/Contact";
+import MDEditor from "@uiw/react-md-editor";
+
+
 const SinglePost = () => {
   const { education, isLoaded, err, buildLength, educationLength } =
     useContext( Context );
@@ -77,7 +80,7 @@ const SinglePost = () => {
                       </div>
                     </div>
                     <p className="aritcle-content-for-singlepage">
-                        { single.content }
+                        <MDEditor.Markdown source={ single.content } />
                       </p>
                       <div className="mobile-contact-form-desktop">
                         <Contact />

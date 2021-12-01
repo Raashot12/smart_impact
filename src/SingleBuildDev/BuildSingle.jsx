@@ -11,6 +11,9 @@ import Loading from "../Utilities/Loading";
 import { useParams, useHistory } from "react-router-dom";
 import ScrollToTop from "../components/ScrollToTop";
 import Contact from "../components/ContactForm/Contact";
+import MDEditor from "@uiw/react-md-editor";
+
+
 const BuildSingle = () => {
     const { build, isLoaded, err, buildLength, educationLength } =
         useContext( Context );
@@ -77,11 +80,8 @@ const BuildSingle = () => {
                                                 </div>
                                             </div>
                                             <p className="aritcle-content-for-singlepage">
-                                                { single.content }
+                                                <MDEditor.Markdown source={ single.content } />
                                             </p>
-                                            <div>
-                                                <h1>RASHEED IMAGES</h1>
-                                            </div>
                                             <div className="mobile-contact-form-desktop">
                                                 <Contact />
                                             </div>
